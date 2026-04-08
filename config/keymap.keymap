@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -18,11 +17,11 @@
 
         layer_0 {
             bindings = <
-&none  &none  &none  &none  &none  &none                                  &none        &none  &none      &none    &none      &none
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T                                  &kp Y        &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G      &mkp LCLK  &mkp RCLK        &kp H        &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp SPACE  &kp RET          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-&none  &none  &none  &none  &none  &kp SPACE  &kp TAB    &lt 2 BACKSPACE  &lt 1 ENTER  &none  &none      &none    &none      &none
+&none  &none  &none  &none  &none  &none                                       &none        &none  &none      &none    &none      &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G      &none           &none            &kp H        &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+&none  &none  &none  &none  &none  &kp SPACE  &kp TAB         &lt 2 BACKSPACE  &lt 1 ENTER  &none  &none      &none    &none      &none
             >;
         };
 
