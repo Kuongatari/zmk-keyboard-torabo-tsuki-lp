@@ -11,6 +11,17 @@
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
         };
+
+        MB1 {
+            bindings = <&mkp MB1>;
+            key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        MB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
@@ -31,7 +42,7 @@
 &none  &none         &none         &none         &none         &none                    &none  &none           &none           &none            &none  &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                   &none  &none           &kp UP          &none            &none  &none
 &none  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0     &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp EQUAL  &none  &none  &none  &mkp MB1        &mkp MB2        &none            &none  &none
+&none  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp EQUAL  &none  &none  &none  &none           &none           &none            &none  &none
 &none  &none         &none         &none         &none         &kp F7     &none  &none  &none  &none           &none           &none            &none  &none
             >;
         };
