@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -10,20 +9,6 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-        };
-
-        MB1 {
-            bindings = <&mkp MB1>;
-            key-positions = <33 34>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        MB2 {
-            bindings = <&mkp MB2>;
-            key-positions = <34 35>;
-            timeout-ms = <50>;
-            layers = <0>;
         };
     };
 
