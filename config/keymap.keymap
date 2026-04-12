@@ -16,11 +16,14 @@
             bindings = <&mkp MB1>;
             key-positions = <33 34>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         MB2 {
             bindings = <&mkp MB2>;
             key-positions = <34 35>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
