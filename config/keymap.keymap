@@ -26,13 +26,13 @@
 
         jk {
             bindings = <&kp COMMA>;
-            key-positions = <33 34>;
+            key-positions = <47 48>;
             layers = <0>;
         };
 
         kl {
             bindings = <&kp PERIOD>;
-            key-positions = <34 35>;
+            key-positions = <48 49>;
             layers = <0>;
         };
     };
