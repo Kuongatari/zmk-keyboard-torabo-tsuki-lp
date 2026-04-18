@@ -9,27 +9,31 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
+            key-positions = <44 45>;
         };
 
         ui {
             bindings = <&kp EXCLAMATION>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         io {
             bindings = <&kp QUESTION>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         jk {
             bindings = <&kp COMMA>;
             key-positions = <33 34>;
+            layers = <0>;
         };
 
         kl {
             bindings = <&kp PERIOD>;
             key-positions = <34 35>;
+            layers = <0>;
         };
     };
 
