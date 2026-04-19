@@ -14,24 +14,12 @@
 
         ui {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <19 20>;
+            key-positions = <47 48>;
             layers = <0>;
         };
 
         io {
             bindings = <&kp QUESTION>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        jk {
-            bindings = <&kp COMMA>;
-            key-positions = <47 48>;
-            layers = <0>;
-        };
-
-        kl {
-            bindings = <&kp PERIOD>;
             key-positions = <48 49>;
             layers = <0>;
         };
