@@ -35,6 +35,16 @@
             key-positions = <48 49>;
             layers = <0>;
         };
+
+        LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <33 34>;
+        };
+
+        RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
