@@ -35,6 +35,16 @@
             key-positions = <48 49>;
             layers = <0>;
         };
+
+        MB1 {
+            bindings = <&mkp MB1>;
+            key-positions = <33 34>;
+        };
+
+        MB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
