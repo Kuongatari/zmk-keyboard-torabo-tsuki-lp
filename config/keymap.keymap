@@ -17,12 +17,6 @@
             key-positions = <33 34>;
             layers = <0>;
         };
-
-        MB2 {
-            bindings = <&mkp RCLK>;
-            key-positions = <34 35>;
-            layers = <0>;
-        };
     };
 
     keymap {
