@@ -12,18 +12,6 @@
             key-positions = <44 45>;
         };
 
-        ui {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <47 48>;
-            layers = <0>;
-        };
-
-        io {
-            bindings = <&kp QUESTION>;
-            key-positions = <48 49>;
-            layers = <0>;
-        };
-
         MB1 {
             bindings = <&mkp LCLK>;
             key-positions = <33 34>;
