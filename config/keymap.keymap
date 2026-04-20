@@ -12,10 +12,9 @@
             key-positions = <44 45>;
         };
 
-        MB1 {
+        LCLK {
             bindings = <&mkp LCLK>;
             key-positions = <33 34>;
-            layers = <0>;
         };
     };
 
