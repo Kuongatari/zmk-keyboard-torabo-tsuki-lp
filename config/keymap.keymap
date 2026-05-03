@@ -21,6 +21,16 @@
             bindings = <&mkp MB2>;
             key-positions = <34 35>;
         };
+
+        aa {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <19 33>;
+        };
+
+        a {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <33 47>;
+        };
     };
 
     keymap {
