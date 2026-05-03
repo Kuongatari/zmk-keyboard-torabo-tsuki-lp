@@ -15,6 +15,7 @@
         LCLK {
             bindings = <&mkp MB1>;
             key-positions = <33 34>;
+            layers = <0>;
         };
     };
 
