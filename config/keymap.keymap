@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -11,12 +10,6 @@
             bindings = <&bt BT_CLR>;
             key-positions = <44 45>;
         };
-
-        LCLK {
-            bindings = <&mkp MB1>;
-            key-positions = <33 34>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -24,21 +17,21 @@
 
         layer_0 {
             bindings = <
-&none  &none      &none         &none         &none      &none                                &none        &none  &none      &none       &none      &none
-&none  &kp Q      &kp W         &kp E         &kp R      &kp T                                &kp Y        &kp U  &kp I      &kp O       &kp P      &none
-&none  &kp A      &kp S         &kp D         &kp F      &kp G      &none    &none            &kp H        &kp J  &kp K      &kp L       &kp MINUS  &none
-&none  &kp Z      &kp X         &kp C         &kp V      &kp B      &none    &none            &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH  &none
-&none  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LANG1  &kp SPACE  &kp TAB  &lt 2 BACKSPACE  &lt 1 ENTER  &none  &none      &none       &none      &none
+&none  &none  &none               &none           &none      &none                                       &none              &none  &none                &none                     &none      &none
+&none  &kp Q  &kp W               &kp E           &kp R      &kp T                                       &kp Y              &kp U  &kp I                &kp O                     &kp P      &none
+&none  &kp A  &kp S               &kp D           &kp F      &kp G             &none    &none            &kp H              &kp J  &kp K                &kp L                     &kp MINUS  &none
+&none  &kp Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &kp V      &mt LEFT_SHIFT B  &none    &none            &mt RIGHT_SHIFT N  &kp M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD  &kp SLASH  &none
+&none  &none  &kp LEFT_WIN        &none           &kp LANG1  &kp SPACE         &kp TAB  &lt 2 BACKSPACE  &lt 1 ENTER        &none  &none                &none                     &none      &none
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &none         &none         &none         &none         &none                    &none  &none           &none           &none            &none  &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                   &none  &none           &kp UP          &none            &none  &none
-&none  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0     &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp EQUAL  &none  &none  &none  &none           &none           &none            &none  &none
-&none  &none         &none         &kp LANG2     &none         &kp F7     &none  &none  &none  &none           &none           &none            &none  &none
+&none  &none         &none         &none         &none           &none                    &none  &none           &none           &none            &none  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                   &none  &none           &kp UP          &none            &none  &none
+&none  &kp NUMBER_6  &kp N7        &kp N8        &kp N9          &kp N0     &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&none  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH       &kp EQUAL  &none  &none  &none  &none           &none           &none            &none  &none
+&none  &none         &none         &none         &kp LANGUAGE_2  &kp F7     &none  &none  &none  &none           &none           &none            &none  &none
             >;
         };
 
