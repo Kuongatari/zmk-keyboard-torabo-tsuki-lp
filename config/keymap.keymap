@@ -15,13 +15,13 @@
         aaaa {
             bindings = <&mkp MB1>;
             key-positions = <33 34>;
-            layers = <2>;
+            layers = <0>;
         };
 
         aaaaa {
             bindings = <&mkp MB2>;
             key-positions = <34 35>;
-            layers = <2>;
+            layers = <0>;
         };
     };
 
