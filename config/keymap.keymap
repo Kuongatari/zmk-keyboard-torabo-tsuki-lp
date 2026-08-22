@@ -52,6 +52,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        L0Lng1orLng2: L0Lng1orLng2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L0LNG1ORLNG2";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&kp LANGUAGE_2>;
+        };
     };
 
     keymap {
@@ -59,11 +66,11 @@
 
         layer_0 {
             bindings = <
-&none  &none  &none               &none           &none      &none                                       &none        &none  &none     &none      &none      &none
-&none  &kp Q  &kp W               &kp E           &kp R      &kp T                                       &kp Y        &kp U  &kp I     &kp O      &kp P      &none
-&none  &kp A  &kp S               &kp D           &kp F      &kp G      &none           &none            &kp H        &kp J  &kp K     &kp L      &kp MINUS  &none
-&none  &kp Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &kp V      &kp B      &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp N        &kp M  &L0conma  &L0period  &kp SLASH  &none
-&none  &none  &kp LEFT_WIN        &none           &kp LANG1  &kp SPACE  &kp TAB         &L0Backspace     &lt 1 ENTER  &none  &none     &none      &none      &none
+&none  &none  &none               &none           &none          &none                                    &none              &none  &none     &none      &none      &none
+&none  &kp Q  &kp W               &kp E           &kp R          &kp T                                    &kp Y              &kp U  &kp I     &kp O      &kp P      &none
+&none  &kp A  &kp S               &kp D           &kp F          &kp G             &none    &none         &kp H              &kp J  &kp K     &kp L      &kp MINUS  &none
+&none  &kp Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &kp V          &mt LEFT_SHIFT B  &none    &none         &mt RIGHT_SHIFT N  &kp M  &L0conma  &L0period  &kp SLASH  &none
+&none  &none  &kp LEFT_WIN        &none           &L0Lng1orLng2  &kp SPACE         &kp TAB  &L0Backspace  &lt 1 ENTER        &none  &none     &none      &none      &none
             >;
         };
 
