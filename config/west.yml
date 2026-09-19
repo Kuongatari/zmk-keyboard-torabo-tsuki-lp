@@ -2,13 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: sekigon-gonnoc
-      url-base: https://github.com/sekigon-gonnoc
+     - name: tak-2025
+      url-base: https://github.com/tak-2025
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: tak-2025
+      revision: dev
       import: app/west.yml
+    - name: torabo-tsuki_ext_FW
+      remote: tak-2025
+      revision: main
     - name: zmk-component-bmp-boost
       remote: sekigon-gonnoc
       import: west.yml
